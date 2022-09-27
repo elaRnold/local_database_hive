@@ -9,7 +9,7 @@ import 'domain/repositories/user_repository.dart';
 import 'domain/use_case/users.dart';
 import 'ui/controllers/home_controller.dart';
 import 'ui/home.dart';
-import 'package:path_provider/path_provider.dart' as path_provider;
+// import 'package:path_provider/path_provider.dart' as path_provider;
 
 Future<List<Box>> _openBox() async {
   List<Box> boxList = [];
@@ -39,5 +39,5 @@ void main() async {
   Get.put(UserRepository());
   Get.put(Users());
   Get.put(HomeController());
-  runApp(Home());
+  runApp(const Home());
 }

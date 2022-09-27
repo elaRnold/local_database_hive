@@ -13,18 +13,18 @@ class UserListPage extends StatelessWidget {
     //HomeController controller = Get.find();
     UserController userController = Get.find();
     return Scaffold(
-      appBar: AppBar(title: Text("User list"), actions: <Widget>[
+      appBar: AppBar(title: const Text("User list"), actions: <Widget>[
         IconButton(
-            key: Key('deleteAllButton'),
+            key: const Key('deleteAllButton'),
             onPressed: () {
               userController.deleteAll();
             },
-            icon: Icon(Icons.delete))
+            icon: const Icon(Icons.delete))
       ]),
       floatingActionButton: GetX<HomeController>(
         builder: (controller) {
           return FloatingActionButton(
-            key: Key('addUserButton'),
+            key: const Key('addUserButton'),
             child: Icon(controller.connection
                 ? Icons.add
                 : Icons.portable_wifi_off_rounded),

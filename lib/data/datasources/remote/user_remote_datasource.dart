@@ -13,7 +13,7 @@ class UserRemoteDatatasource {
     //https://randomuser.me/api/?format=json&results=1
 
     var request =
-        Uri.parse("https://randomuser.me/api").resolveUri(Uri(queryParameters: {
+      Uri.parse("https://randomuser.me/api").resolveUri(Uri(queryParameters: {
       "format": 'json',
       "results": "1",
     }));
